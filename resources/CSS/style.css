@@ -1,0 +1,39 @@
+/*
+font-family: 'Unica One', cursive;
+font-size: 52px;
+font-family: 'Crimson Text', serif;
+font-size: 19px;
+*/
+
+
+/*General settings */
+
+*{
+    font-family: 'Crimson Text', serif;
+    font-size: 16px;
+    display: flex;
+    background-color: #CBCBD1;
+    color: #080C33;
+}
+
+/* Navigation section */
+
+nav {
+    display: inline-flex;
+    width: 100%;
+    background-color: #6F73A7;
+    padding-top: 2rem;
+    justify-items: center;
+    justify-content: space-between;
+    font-family: 'Unica One', cursive;
+}
+
+nav h1 {
+    font-size: 4rem;
+}
+
+nav li{
+    list-style: none;
+    padding-right: 0.625rem;
+    font-size: 2rem;
+}
