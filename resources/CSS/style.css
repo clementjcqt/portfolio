@@ -1,17 +1,17 @@
 /*
-font-family: 'Unica One', cursive;
-font-size: 52px;
-font-family: 'Crimson Text', serif;
-font-size: 19px;
+font-family: 'Nunito', sans-serif;
+font-size: 45px
+font-family: 'PT Sans', sans-serif;
+font-size: 17px
 */
 
 
 /*General settings */
 
-*{
-    font-family: 'Crimson Text', serif;
+html{
+    font-family: 'Nunito', sans-serif;
     font-size: 16px;
-    display: flex;
+    display: block;
     background-color: #CBCBD1;
     color: #080C33;
 }
@@ -21,19 +21,36 @@ font-size: 19px;
 nav {
     display: inline-flex;
     width: 100%;
-    background-color: #6F73A7;
-    padding-top: 2rem;
     justify-items: center;
     justify-content: space-between;
-    font-family: 'Unica One', cursive;
+    font-family: 'PT Sans', sans-serif;
+    align-items: center;
 }
 
 nav h1 {
     font-size: 4rem;
 }
 
+#nav-bar {
+    display: inline-flex;
+    padding: 2rem;
+}
+
 nav li{
     list-style: none;
-    padding-right: 0.625rem;
+    padding: 1rem;
     font-size: 2rem;
 }
+
+nav a {
+    text-decoration: none;
+}
+
+/* Banner Section */
+
+#banner-section img {
+    width: 100%;
+    height:37.5rem;
+    opacity: 0.8;
+}
+
