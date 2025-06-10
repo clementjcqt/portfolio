@@ -1,0 +1,61 @@
+body {
+    background-color: #FFF;
+    font-size: 14px;
+    font-family: Helvetica, sans-serif;
+    color: #352F44;
+    letter-spacing: -0.1rem;
+    padding: 1rem;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    margin: 5px auto;
+    align-items: center;
+    box-shadow: 0 0 16px rgba(0, 0, 0, 0.1);
+    padding: 1rem 0.5rem;
+    background-color: rgba(250, 240, 230, 0.3);
+}
+
+#logo {
+    font-size: 6rem;
+    letter-spacing: -0.25rem;
+}
+
+.navbar li {
+    display: inline-block;
+    justify-content: space-around;
+    width: 250px;
+    font-size: 3rem;
+
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #5C5470;
+}
+
+.landpage {
+    display: flex;
+    background-color: rgba(250, 240, 230, 0.3);
+    height: 600px;
+    box-shadow: 0 0 16px rgba(0, 0, 0, 0.1);
+}
+
+.landpage h1 {
+    font-size: 5rem;
+    color: #5C5470;
+    padding: 1rem;
+}
+
+.landpage #intro p {
+    font-size: 2rem;
+    line-height: 3rem;
+    padding: 1rem;
+}
+
+.landpage img {
+    max-height: 600px;
+    border-radius: 50%;
+}
+
