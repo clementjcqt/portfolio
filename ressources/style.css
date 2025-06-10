@@ -1,3 +1,5 @@
+/*General styling */
+
 body {
     background-color: #FFF;
     font-size: 14px;
@@ -7,14 +9,16 @@ body {
     padding: 1rem;
 }
 
+/*Navigation bar styling */
+
 .navbar {
     display: flex;
     justify-content: space-between;
-    margin: 5px auto;
+    margin: 10px auto;
     align-items: center;
     box-shadow: 0 0 16px rgba(0, 0, 0, 0.1);
     padding: 1rem 0.5rem;
-    background-color: rgba(250, 240, 230, 0.3);
+    background-color: rgba(250, 240, 230, 0.5);
 }
 
 #logo {
@@ -25,21 +29,32 @@ body {
 .navbar li {
     display: inline-block;
     justify-content: space-around;
-    width: 250px;
     font-size: 3rem;
+    padding: 0.5rem;
 
 }
 
 .navbar a {
     text-decoration: none;
     color: #5C5470;
+    padding: 1rem;
+    transition: 0.5s ease-in;
 }
+
+.navbar a:hover {
+    background-color: rgba(92, 84, 112, 0.2);
+    border-radius: 5%;
+    box-shadow: 0 0 16px rgba(0, 0, 0, 0.1);
+}
+
+/*Main section styling */ 
 
 .landpage {
     display: flex;
-    background-color: rgba(250, 240, 230, 0.3);
+    background-color: rgba(250, 240, 230, 0.5);
     height: 600px;
     box-shadow: 0 0 16px rgba(0, 0, 0, 0.1);
+    margin-top: 1rem;
 }
 
 .landpage h1 {
@@ -56,6 +71,23 @@ body {
 
 .landpage img {
     max-height: 600px;
-    border-radius: 50%;
+    border-radius: 40%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
+/*Form styling */ 
+
+.form-contact {
+    font-size: 2rem;
+    display: block;
+    background-color:  rgba(250, 240, 230, 0.5);
+    padding-bottom: 2rem;
+}
+
+input {
+    padding: 1rem 0.5rem;
+}
+
+#contactme {
+    width: 10rem;
+}
