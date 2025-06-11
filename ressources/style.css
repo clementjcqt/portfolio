@@ -14,11 +14,11 @@ body {
 .navbar {
     display: flex;
     justify-content: space-between;
-    margin: 10px auto;
+    margin: 5px auto;
     align-items: center;
     box-shadow: 0 0 16px rgba(0, 0, 0, 0.1);
     padding: 1rem 0.5rem;
-    background-color: rgba(250, 240, 230, 0.5);
+    background-color: rgba(250, 240, 230, 0.4);
 }
 
 #logo {
@@ -38,7 +38,7 @@ body {
     text-decoration: none;
     color: #5C5470;
     padding: 1rem;
-    transition: 0.5s ease-in;
+    transition: 0.3s ease-in;
 }
 
 .navbar a:hover {
@@ -51,7 +51,7 @@ body {
 
 .landpage {
     display: flex;
-    background-color: rgba(250, 240, 230, 0.5);
+    background-color: rgba(250, 240, 230, 0.4);
     height: 600px;
     box-shadow: 0 0 16px rgba(0, 0, 0, 0.1);
     margin-top: 1rem;
@@ -77,17 +77,50 @@ body {
 
 /*Form styling */ 
 
+#form-section {
+    box-shadow: 0 0 16px rgba(0, 0, 0, 0.1);
+}
+
 .form-contact {
-    font-size: 2rem;
+    font-size: 1.5rem;
     display: block;
-    background-color:  rgba(250, 240, 230, 0.5);
-    padding-bottom: 2rem;
+    background-color:  rgba(250, 240, 230, 0.4);
+    font-style: italic;
+    line-height: 3rem;
+}
+
+.form-contact h2 {
+    padding: 1rem 0 0.5rem 0;
 }
 
 input {
-    padding: 1rem 0.5rem;
+    padding: 0 0.5rem;
+    box-shadow: 0 0 16px rgba(0, 0, 0, 0.1);
+    display: block;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    font-size: 1.5rem;
+}
+
+label {
+    padding: 1rem;
+}
+
+#message {
+    padding: 4rem 6rem;
 }
 
 #contactme {
     width: 10rem;
+    background-color: #352F44;
+    color: rgba(250, 240, 230, 1);
+    border-radius: 0.5rem;
+    box-shadow: 0 0 16px rgba(0, 0, 0, 0.1);
+    font-size: 1.5rem;
+    transition: 0.3s ease;
+    margin: 0 auto;
+}
+
+#contactme:hover {
+    background-color: #5C5470;
 }
