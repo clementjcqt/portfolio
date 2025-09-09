@@ -1,0 +1,61 @@
+/* Variables CSS personnalisées */
+:root {
+    --primary-color: #111111;
+    --secondary-color: #D60000;
+    --background-color: #f5f5f5;
+    --accent-color: #004f7c;
+}
+
+/* Styles de base */
+html {
+    scroll-behavior: smooth;
+    font-family: "Work Sans", sans-serif;
+}
+
+body {
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  text-decoration: none;
+  background: var(--background-color);
+  color: var(--primary-color);
+}
+
+.container {
+  width: 80%;
+  background: white;
+  border-radius: 50px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Montserrat", sans-serif;
+  color: var(--accent-color);
+  letter-spacing: -2px;
+  text-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+}
+/* Banner section */
+
+.banner-section img {
+  margin: 2rem auto;
+  object-fit: contain;
+  height: 300px;
+  width: 300px;
+  border-radius: 50%;
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+}
+
+
+/* Vos styles personnalisés ici */
+.custom-class {
+    /* Styles spécifiques non couverts par Tailwind */
+}
+
+/* Animations personnalisées */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.animate-fade-in {
+    animation: fadeIn 0.5s ease-in-out;
+}
