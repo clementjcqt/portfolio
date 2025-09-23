@@ -6,6 +6,7 @@
   --text: #c6c7c6 ;
   --accent-color: #f0fbff;
   --bs-body-color: var(--text);
+  --accent-green: #00b894;
   font-size: 20px;
 }
 
@@ -135,19 +136,21 @@ span{
 
 .header {
   width: 40%;
+  margin-top: 5rem;
 }
 
 .about {
   width: 40%;
   margin: auto 0;
   line-height: 1.5rem;
+  margin-top: 5rem;
 }
 
 
 .skills {
   color: var(--text);
   width: 80%;
-  margin: auto 0;
+  margin: 200px 0;
 }
 
 
@@ -207,4 +210,45 @@ span{
   transform: translateY(-6px);
   box-shadow: 0 12px 30px rgba(0,0,0,0.6);
   border-color: var(--cyan);
+}
+
+.job {
+  background: rgba(40, 42, 42, 0.4);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 16px;
+  padding: 1rem;
+  color: var(--text);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px); /* Safari support */
+  box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin-bottom: 2rem;
+}
+
+.socials ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
+}
+
+.socials li {
+  padding: 1.2rem 0;
+
+}
+
+.socials a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.socials {
+  font-size: 6rem;
+  color: var(--cyan);
+}
+
+.socials a:hover {
+  color: var(--accent-green);
+  text-shadow: 1px 1px 10px var(--cyan);
+  transform: translateY(-6px);
 }
