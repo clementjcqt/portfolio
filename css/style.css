@@ -126,9 +126,9 @@ span{
   text-shadow: 1px 1px 4px var(--blue);
 }
 
-.main-container {
+.container {
   margin-left: 300px;
-  width: 80%;
+  min-width: 800px;
   display: flex;
   gap: 4rem;
   flex-wrap: wrap;
@@ -150,7 +150,7 @@ span{
 .skills {
   color: var(--text);
   width: 80%;
-  margin: 200px 0;
+  margin: 200px 0 0 0;
 }
 
 
@@ -251,4 +251,150 @@ span{
   color: var(--accent-green);
   text-shadow: 1px 1px 10px var(--cyan);
   transform: translateY(-6px);
+}
+
+
+
+
+/* Responsiveness */
+@media (max-width: 1200px) {
+  :root {
+    font-size: 18px;
+  }
+
+  .container {
+    margin-left: 220px;
+    min-width: auto;
+    gap: 3rem;
+  }
+
+  .header,
+  .about,
+  .skills {
+    width: 100%;
+  }
+
+  .card {
+    width: 100%;
+  }
+}
+
+@media (max-width: 992px) {
+  :root {
+    font-size: 17px;
+  }
+
+  .sidebar {
+    width: 200px;
+  }
+
+  .container {
+    margin-left: 220px;
+    gap: 2.5rem;
+  }
+
+  .card img {
+    height: auto;
+  }
+}
+
+@media (max-width: 768px) {
+  :root {
+    font-size: 16px;
+  }
+
+  body {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .sidebar {
+    position: static;
+    width: 100%;
+    margin-top: 0;
+    padding: 1rem 0;
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    background: rgba(40, 42, 42, 0.6);
+  }
+
+  .sidebar ul {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+  }
+
+  .sidebar li {
+    padding: 0;
+  }
+
+  .container {
+    margin: 0 auto;
+    padding: 0 1.5rem 3rem;
+    width: 100%;
+    gap: 2rem;
+  }
+
+  .header,
+  .about,
+  .skills {
+    width: 100%;
+    margin-top: 2rem;
+  }
+
+  .cards {
+    flex-direction: column;
+  }
+
+  .card {
+    width: 100%;
+    min-height: auto;
+  }
+
+  .card img {
+    width: 100%;
+    max-height: 260px;
+    object-fit: cover;
+  }
+
+  .resume-content {
+    margin-top: 2rem;
+  }
+
+  .socials ul {
+    gap: 1rem;
+    align-items: center;
+  }
+
+  .socials {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 576px) {
+  h1 {
+    font-size: 2.8rem;
+    line-height: 3rem;
+  }
+
+  h2 {
+    font-size: 2.2rem;
+  }
+
+  .sidebar {
+    font-size: 0.9rem;
+  }
+
+  .sidebar ul {
+    flex-wrap: wrap;
+    row-gap: 1rem;
+  }
+
+  .container {
+    padding: 0 1rem 2.5rem;
+  }
+
+  .socials {
+    font-size: 2.4rem;
+  }
 }
