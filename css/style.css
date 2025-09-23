@@ -51,7 +51,10 @@ html {
 body {
   width: 100%;
   margin: 0 auto;
-  text-decoration: none;
+
+  a {
+    text-decoration: none;
+  }
 }
 
 h1 {
@@ -119,6 +122,7 @@ span{
 
 .sidebar a:hover {
   color: var(--cyan);
+  text-shadow: 1px 1px 4px var(--blue);
 }
 
 .main-container {
@@ -171,4 +175,36 @@ span{
   background: linear-gradient(to right, #1868C8, #00b894 40%, #00B3F6 80%);
   border-radius: 8px;
   transition: width 1.5s ease-out;
+}
+
+.card {
+  background: rgba(40, 42, 42, 0.4);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 16px;
+  padding: 1rem;
+  color: var(--text);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px); /* Safari support */
+  box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  min-height: 420px;
+  width: 500px;
+
+  img {
+    height: 300px;
+    padding: 1rem;
+  }
+
+}
+
+
+.cards {
+  gap: 4rem;
+}
+
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.6);
+  border-color: var(--cyan);
 }
