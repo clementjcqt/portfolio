@@ -315,7 +315,6 @@ span{
     padding: 1rem 0;
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);
-    background: rgba(40, 42, 42, 0.6);
   }
 
   .sidebar ul {
