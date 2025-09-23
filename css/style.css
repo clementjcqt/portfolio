@@ -127,7 +127,7 @@ span{
 }
 
 .main-container {
-  margin-left: 220px;
+  margin-left: 300px;
   width: 80%;
   display: flex;
   gap: 4rem;
@@ -243,7 +243,7 @@ span{
 }
 
 .socials {
-  font-size: 6rem;
+  font-size: 5rem;
   color: var(--cyan);
 }
 
