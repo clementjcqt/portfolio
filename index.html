@@ -18,12 +18,12 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body class="bg-radial-blue-progressive d-flex">
+<body class="background-gradient d-flex">
   <nav class="sidebar flex-column d-flex">
     <ul>
-      <li><a href="#about">About</a></li>
+      <li><a href="#">About</a></li>
       <li><a href="#skills">My skills</a></li>
-      <li><a href="#">My projects</a></li>
+      <li><a href="#projects">My projects</a></li>
       <li><a href="#">My CV</a></li>
       <li><a href="#">Contact</a></li>
     </ul>
@@ -31,7 +31,7 @@
   <main class="main-container">
     <div class="header mt-5">
       <h6>Hi, my name is</h6>
-      <h1 class="mt-1">Clement Jacquet.</h1>
+      <h1 class="mt-1">Clément Jacquet.</h1>
       <h2>I build things for the web.</h2>
     </div>
     <div class="about mt-5" id="about">
@@ -54,48 +54,95 @@
       </p>
     </div>
 
-<div class="skills" id="skills">
-  <h2>Skills</h2>
+    <div class="skills" id="skills">
+      <h2>Skills</h2>
 
-  <h3>Languages</h3>
-  <div class="skill">
-    <span>HTML / CSS</span>
-    <div class="bar"><div style="width: 90%"></div></div>
-  </div>
-  <div class="skill">
-    <span>JavaScript</span>
-    <div class="bar"><div style="width: 75%"></div></div>
-  </div>
-  <div class="skill">
-    <span>Ruby</span>
-    <div class="bar"><div style="width: 70%"></div></div>
-  </div>
+      <h3>Languages</h3>
+      <div class="skill">
+        <span>HTML / CSS</span>
+        <div class="bar">
+          <div style="width: 70%"></div>
+        </div>
+      </div>
+      <div class="skill">
+        <span>JavaScript</span>
+        <div class="bar">
+          <div style="width: 50%"></div>
+        </div>
+      </div>
+      <div class="skill">
+        <span>Ruby</span>
+        <div class="bar">
+          <div style="width: 60%"></div>
+        </div>
+      </div>
 
-  <h3>Frameworks</h3>
-  <div class="skill">
-    <span>Ruby on Rails</span>
-    <div class="bar"><div style="width: 50%"></div></div>
-  </div>
-  <div class="skill">
-    <span>React (learning)</span>
-    <div class="bar"><div style="width: 10%"></div></div>
-  </div>
+      <h3>Frameworks</h3>
+      <div class="skill">
+        <span>Ruby on Rails</span>
+        <div class="bar">
+          <div style="width: 40%"></div>
+        </div>
+      </div>
+      <div class="skill">
+        <span>React</span>
+        <div class="bar">
+          <div style="width: 10%"></div>
+        </div>
+      </div>
 
-  <h3>Tools / Platforms</h3>
-  <div class="skill">
-    <span>Git / GitHub</span>
-    <div class="bar"><div style="width: 60%"></div></div>
-  </div>
-  <div class="skill">
-    <span>Bootstrap</span>
-    <div class="bar"><div style="width: 40%"></div></div>
-  </div>
-    <div class="skill">
-    <span>Bubble</span>
-    <div class="bar"><div style="width: 5%"></div></div>
-  </div>
-</div>
-
+      <h3>Tools / Platforms</h3>
+      <div class="skill">
+        <span>Git / GitHub</span>
+        <div class="bar">
+          <div style="width: 60%"></div>
+        </div>
+      </div>
+      <div class="skill">
+        <span>Bootstrap</span>
+        <div class="bar">
+          <div style="width: 40%"></div>
+        </div>
+      </div>
+      <div class="skill">
+        <span>Bubble</span>
+        <div class="bar">
+          <div style="width: 5%"></div>
+        </div>
+      </div>
+      <div class="skill">
+        <span>Figma</span>
+        <div class="bar">
+          <div style="width: 45%"></div>
+        </div>
+      </div>
+    </div>
+    <div class="projects" id="projects">
+      <h2 class="pb-3">My projects</h2>
+      <div class="cards d-flex">
+        <a href="https://habits-tracker-81fda164a177.herokuapp.com/" target="blank">
+          <div class="card">
+            <div class="top-section">
+              <h3>Habits</h3>
+              <div class="card-info d-flex">
+                <p>
+                  Habits is a responsive web application built with Ruby on Rails, designed to help users track and
+                  visualize their daily routines over time. It not only lets users log good and bad habits, but also
+                  integrates with a large language model (LLM) to provide personalized tips and recommendations, making
+                  habit-building more engaging and effective.
+                </p>
+                <img src="./assets/images/dashboard.png" alt="écran d'accueil d'habits">
+              </div>
+            </div>
+            <span class="pt-4">Ruby on Rails - Stimulus - Azure LLM API - Bootstrap</span>
+          </div>
+        </a>
+        <div class="card">
+          <h3>Toolmate</h3>
+        </div>
+      </div>
+    </div>
+    <a href="mailto:clement.jacquet.16@gmail.com">Contact me !</a>
   </main>
 </body>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
