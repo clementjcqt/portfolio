@@ -1,137 +1,61 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mon portfolio</title>
+  <title>Clément Jacquet</title>
   <meta name="description" content="Description de votre site">
 
-  <!-- Tailwind CSS via CDN -->
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          animation: {
-            'infinite-scroll': 'infinite-scroll 25s linear infinite',
-          },
-          keyframes: {
-            'infinite-scroll': {
-              from: { transform: 'translateX(0)' },
-              to: { transform: 'translateX(-100%)' },
-            }
-          }
-        },
-      },
-    }
-  </script>
-
   <!-- CSS personnalisé -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
-    href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
     rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body>
-  <header class="banner-section">
-    <img src="/assets/images/P1310033.jpg" alt="photo de clément jacquet">
-  </header>
-  <h1 class="text-4xl text-center">Welcome to my portfolio !</h1>
-  <div class="container">
-    <div class="relative font-inter antialiased">
-
-      <main class="relative min-h-screen flex flex-col justify-center bg-slate-900 overflow-hidden">
-        <div class="w-full max-w-5xl mx-auto px-4 md:px-6 py-24">
-          <div class="text-center">
-
-            <!-- Logo Carousel animation  -->
-            <div x-data="{}" x-init="$nextTick(() => {
-                        let ul = $refs.logos;
-                        ul.insertAdjacentHTML('afterend', ul.outerHTML);
-                        ul.nextSibling.setAttribute('aria-hidden', 'true');
-                    })"
-              class="w-full inline-flex flex-nowrap overflow-hidden [mask-image:_linear-gradient(to_right,transparent_0,_black_128px,_black_calc(100%-128px),transparent_100%)]">
-              <ul x-ref="logos"
-                class="flex items-center justify-center md:justify-start [&_li]:mx-8 [&_img]:max-w-none animate-infinite-scroll">
-                <li>
-                  <img src="https://cruip-tutorials.vercel.app/logo-carousel/facebook.svg" alt="Facebook" />
-                </li>
-                <li>
-                  <img src="https://cruip-tutorials.vercel.app/logo-carousel/disney.svg" alt="Disney" />
-                </li>
-                <li>
-                  <img src="https://cruip-tutorials.vercel.app/logo-carousel/airbnb.svg" alt="Airbnb" />
-                </li>
-                <li>
-                  <img src="https://cruip-tutorials.vercel.app/logo-carousel/apple.svg" alt="Apple" />
-                </li>
-                <li>
-                  <img src="https://cruip-tutorials.vercel.app/logo-carousel/spark.svg" alt="Spark" />
-                </li>
-                <li>
-                  <img src="https://cruip-tutorials.vercel.app/logo-carousel/samsung.svg" alt="Samsung" />
-                </li>
-                <li>
-                  <img src="https://cruip-tutorials.vercel.app/logo-carousel/quora.svg" alt="Quora" />
-                </li>
-                <li>
-                  <img src="https://cruip-tutorials.vercel.app/logo-carousel/sass.svg" alt="Sass" />
-                </li>
-              </ul>
-            </div>
-            <!-- End: Logo Carousel animation  -->
-
-          </div>
-
-        </div>
-      </main>
-
-      <!-- Page footer -->
-      <footer class="absolute left-6 right-6 md:left-12 md:right-auto bottom-4 md:bottom-8 text-center md:text-left">
-        <a class="text-xs text-slate-500 hover:underline" href="https://cruip.com">&copy;Cruip - Tailwind CSS
-          templates</a>
-      </footer>
-
-      <!-- Banner with links -->
-      <div class="fixed bottom-0 right-0 w-full md:bottom-6 md:right-12 md:w-auto z-50"
-        :class="bannerOpen ? '' : 'hidden'" x-data="{ bannerOpen: true }">
-        <div class="bg-slate-800 text-sm p-3 md:rounded shadow flex justify-between">
-          <div class="text-slate-500 inline-flex">
-            <a class="font-medium hover:underline text-slate-300"
-              href="https://cruip.com/create-an-infinite-horizontal-scroll-animation-with-tailwind-css/"
-              target="_blank">
-              Read Tutorial
-            </a>
-            <span class="italic px-1.5">or</span>
-            <a class="font-medium hover:underline text-indigo-500 flex items-center"
-              href="https://github.com/cruip/cruip-tutorials/blob/main/logo-carousel/index.html" target="_blank"
-              rel="noreferrer">
-              <span>Download</span>
-              <svg class="fill-indigo-400 ml-1" xmlns="http://www.w3.org/2000/svg" width="9" height="9">
-                <path d="m1.649 8.514-.91-.915 5.514-5.523H2.027l.01-1.258h6.388v6.394H7.158l.01-4.226z" />
-              </svg>
-            </a>
-          </div>
-          <button class="text-slate-500 hover:text-slate-400 pl-2 ml-3 border-l border-slate-700"
-            @click="bannerOpen = false">
-            <span class="sr-only">Close</span>
-            <svg class="w-4 h-4 shrink-0 fill-current" viewBox="0 0 16 16">
-              <path
-                d="M12.72 3.293a1 1 0 00-1.415 0L8.012 6.586 4.72 3.293a1 1 0 00-1.414 1.414L6.598 8l-3.293 3.293a1 1 0 101.414 1.414l3.293-3.293 3.293 3.293a1 1 0 001.414-1.414L9.426 8l3.293-3.293a1 1 0 000-1.414z" />
-            </svg>
-          </button>
-        </div>
-      </div>
+<body class="bg-radial-blue-progressive d-flex">
+  <nav class="sidebar flex-column d-flex">
+    <ul>
+      <li><a href="#">About</a></li>
+      <li><a href="#">My skills</a></li>
+      <li><a href="#">My projects</a></li>
+      <li><a href="#">My CV</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
+  <main class="main-container mt-5">
+    <div class="header">
+      <h6>Hi, my name is</h6>
+      <h1 class="mt-1">Clement Jacquet.</h1>
+      <h2>I build things for the web.</h2>
     </div>
-  </div>
-
-
-  <!-- Stimulus -->
-  <script type="module" src="js/app.js"></script>
+    <div class="about">
+      <p>
+        Hi, I’m <span>Clément</span> — a junior <span>full-stack developer</span> and a recent graduate from Le Wagon in
+        Bordeaux. After several
+        years working in management and client relations, I decided to switch paths and dive into tech, where I could
+        combine <span>creativity, problem-solving, and teamwork.</span>
+      </p>
+      <p>
+        What I bring with me is a solid foundation in web development, along with the rigor, attention to detail, and
+        collaborative mindset I developed in my previous career. I love turning ideas into <span>functional,
+          user-friendly</span>
+        applications and I’m always eager to learn new tools and approaches to push my skills further.
+      </p>
+      <p>
+        <span>My goal is simple:</span> to contribute to innovative projects, grow alongside motivated teams, and keep
+        building
+        products that make a real impact.
+      </p>
+    </div>
+  </main>
 </body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 
 </html>
