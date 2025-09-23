@@ -24,17 +24,17 @@
       <li><a href="#">About</a></li>
       <li><a href="#skills">My skills</a></li>
       <li><a href="#projects">My projects</a></li>
-      <li><a href="#">My CV</a></li>
-      <li><a href="#">Contact</a></li>
+      <li><a href="#resume">My CV</a></li>
+      <li><a href="#contact">Contact me</a></li>
     </ul>
   </nav>
   <main class="main-container">
-    <div class="header mt-5">
+    <div class="header">
       <h6>Hi, my name is</h6>
       <h1 class="mt-1">Clément Jacquet.</h1>
       <h2>I build things for the web.</h2>
     </div>
-    <div class="about mt-5" id="about">
+    <div class="about" id="about">
       <p>
         Hi, I’m <span>Clément</span> — a junior <span>full-stack developer</span> and a recent graduate from Le Wagon in
         Bordeaux. After several
@@ -56,7 +56,6 @@
 
     <div class="skills" id="skills">
       <h2>Skills</h2>
-
       <h3>Languages</h3>
       <div class="skill">
         <span>HTML / CSS</span>
@@ -118,7 +117,7 @@
       </div>
     </div>
     <div class="projects" id="projects">
-      <h2 class="pb-3">My projects</h2>
+      <h2 class="pb-3">My projects <span>(more to come soon)</span></h2>
       <div class="cards d-flex">
         <a href="https://habits-tracker-81fda164a177.herokuapp.com/" target="blank">
           <div class="card">
@@ -137,15 +136,56 @@
             <span class="pt-4">Ruby on Rails - Stimulus - Azure LLM API - Bootstrap</span>
           </div>
         </a>
-        <div class="card">
-          <h3>Toolmate</h3>
+      </div>
+    </div>
+    <div class="resume" id="resume">
+      <h2 class="mb-4">My CV</h2>
+      <div class="resume-content">
+        <div class="job">
+          <h4>Duty Manager — Ricky’s River Bar and Restaurant</h4>
+          <p><em>Perth, Australia | Jan 2022 – Nov 2024</em></p>
+          <ul>
+            <li>Directed a 30-member team in a high-pressure environment.</li>
+            <li>Implemented stock management processes to reduce inefficiencies.</li>
+            <li>Organized private events (up to 200 clients) demonstrating project management skills.</li>
+          </ul>
+        </div>
+
+        <div class="job">
+          <h4>Head Waiter — Ricky’s River Bar and Restaurant</h4>
+          <p><em>Noosa, Australia | Jan 2021 – Aug 2021</em></p>
+          <ul>
+            <li>Delivered top-tier customer service in fine dining.</li>
+            <li>Ensured precision and attention to detail for service excellence.</li>
+            <li>Anticipated client needs, akin to understanding end-user requirements in development.</li>
+          </ul>
+        </div>
+
+        <div class="job">
+          <h4>Assistant Manager — Franprix</h4>
+          <p><em>Paris, France | Feb 2017 – Sep 2018</em></p>
+          <ul>
+            <li>Supervised a team of 6 employees and fostered accountability.</li>
+            <li>Optimized stock and inventory processes to reduce waste.</li>
+            <li>Monitored P&L, applying data-driven decision-making.</li>
+          </ul>
         </div>
       </div>
     </div>
-    <a href="mailto:clement.jacquet.16@gmail.com">Contact me !</a>
+    <div class="contact" id="contact">
+      <h2>Contact me !</h2>
+      <h3>If you'd like to get in touch, here are my socials:</h3>
+      <div class="socials">
+        <ul>
+          <li><a href="https://github.com/clementjcqt" target="blank"><i class="fa-brands fa-square-github"></i></a></li>
+          <li><a href="https://www.linkedin.com/in/-clement-jacquet" target="blank"><i class="fa-brands fa-linkedin"></i></a></li>
+          <li><a href="mailto:clement.jacquet.16@gmail.com?subject=Portfolio%20Contact&body=Hi%20Clément," target="blank"><i class="fa-regular fa-envelope"></i></a></li>
+        </ul>
+      </div>
+    </div>
   </main>
 </body>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
   integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
-
+<script src="https://kit.fontawesome.com/8570b91786.js" crossorigin="anonymous"></script>
 </html>
