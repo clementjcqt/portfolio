@@ -42,16 +42,16 @@ body {
 
 .sidebar {
   width: 220px;
-  background: #282A2A; /* dark background */
   color: var(--accent-color);
   padding: 0 1rem;
-  position: fixed;   /* stays fixed while scrolling */
+  position: fixed;
   top: 0;
   left: 0;
   bottom: 0;
   font-family: "Montserrat", sans-serif;
   font-size: 0.9rem;
   margin-top: 60px;
+  letter-spacing: 2px;
 }
 
 .sidebar ul {
@@ -68,41 +68,53 @@ body {
   text-decoration: none;
 }
 
+.sidebar a:hover {
+  color: var(--cyan);
+}
+
 .main-container {
   margin-left: 220px;
   width: 80%;
   display: flex;
   gap: 4rem;
+  flex-wrap: wrap;
 }
 
 .header {
-  width: 50%;
+  width: 40%;
 }
 
 .about {
-  width: 50%;
+  width: 40%;
   margin: auto 0;
   line-height: 1.5rem;
 }
 
 h1 {
   font-size: 4rem;
-  margin: 1rem 0;
+  margin: 1.5rem 0;
   font-weight: 500;
   letter-spacing: -2px;
-  line-height: 4.5rem;
+  line-height: 4rem;
   color: var(--accent-color);
 }
 
 h2 {
   font-size: 3rem;
-  margin: 1rem 0;
   font-weight: 700;
+  color: var(--accent-color);
+  letter-spacing: 2px;
+}
+
+h3 {
+  margin-top: 2rem;
+  color: var(--accent-color);
+  font-size: 1.2rem;
+  letter-spacing: 2px;
 }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: "Montserrat", sans-serif;
-  margin: 0;
 }
 
 span{
@@ -111,4 +123,36 @@ span{
   font-family: "Montserrat", sans-serif;
   font-size: 0.9rem;
   letter-spacing: 2px;
+}
+
+.skills {
+  color: var(--text);
+  width: 80%;
+  margin: auto 0;
+}
+
+
+.skill {
+  margin: 1rem 0;
+}
+
+.skill span {
+  display: block;
+  margin-bottom: 0.3rem;
+  font-weight: 500;
+}
+
+.bar {
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 8px;
+  overflow: hidden;
+  height: 16px;
+}
+
+.bar div {
+  height: 100%;
+  width: 0;
+  background: linear-gradient(to right, #1868C8, #00b894, #00B3F6);
+  border-radius: 8px;
+  transition: width 1.5s ease-out;
 }
