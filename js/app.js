@@ -62,6 +62,6 @@ function typeLoop() {
     currentLetter++;
     setTimeout(typeLoop, speed);
   }
-}
+} 
 
 window.onload = typeLoop;
