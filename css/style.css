@@ -9,7 +9,7 @@
   --accent-green: #00b894;
   font-size: 20px;
 }
-  
+
 .background-gradient {
   background:
     /* top-left sharp cyan/teal glow */
@@ -166,6 +166,10 @@ span{
   color: var(--text);
   width: 80%;
   margin: 200px 0 0 0;
+}
+
+#skills {
+  margin-top: 18rem;
 }
 
 
@@ -357,7 +361,7 @@ span{
 
 @media (max-width: 992px) {
   :root {
-    font-size: 17px;
+    font-size: 18px;
   }
 
   .sidebar {
@@ -366,7 +370,7 @@ span{
 
   .container {
     margin-left: 220px;
-    gap: 2.5rem;
+    gap: 2rem;
   }
 
   .project-card img {
@@ -451,6 +455,10 @@ span{
   .socials {
     font-size: 3rem;
   }
+
+  #skills {
+  margin-top: 6rem;
+}
 }
 
 @media (max-width: 576px) {
@@ -461,6 +469,10 @@ span{
 
   h2 {
     font-size: 2.2rem;
+  }
+
+  .intro {
+    margin-top: 6rem;
   }
 
   .sidebar {
