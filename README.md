@@ -1,31 +1,28 @@
-# portfolio
-My personnal portfolio
-# Mon Site
+# Portfolio  
+My personal portfolio  
 
-Bienvenue sur mon portfolio, voici un petit aperçu des différents projets sur lesquels j'ai pu travailler depuis mon aventure au wagon !
-N'hésitez pas à me contacter si vous avez des propositions ou idées !
+## My Website  
+Welcome to my portfolio! Here you’ll find a selection of the projects I’ve been working on since graduating from Le Wagon.  
+I’d love to hear from you — feel free to reach out with any ideas or opportunities!  
 
-## Technologies utilisées
+## Tech Stack  
+- HTML5  
+- Boostrap
+- JavaScript
+- GitHub Pages  
 
-- HTML5
-- Tailwind CSS
-- Stimulus (Hotwired)
-- GitHub Pages
+## Run Locally  
+1. Clone the repository  
+2. Open `index.html` in your browser  
 
-## Visionnage local
+## Project Structure  
+- `css/` – Custom styles  
+- `js/` – JavaScript & Stimulus controllers  
+- `assets/` – Images and resources  
+- `pages/` – Extra pages  
 
-1. Cloner le repository
-2. Ouvrir `index.html` dans votre navigateur
+## Deployment  
+The site is automatically deployed on GitHub Pages every time I push to the `main` branch.  
 
-## Structure
+**Live site:** [clementjcqt.github.io/portfolio](https://clementjcqt.github.io/portfolio)  
 
-- `css/` - Styles personnalisés
-- `js/` - JavaScript et contrôleurs Stimulus
-- `assets/` - Images et ressources
-- `pages/` - Pages additionnelles
-
-## Déploiement
-
-Le site est automatiquement déployé via GitHub Pages à chaque push sur la branche main.
-
-URL: https://clementjcqt.github.io/portfolio
