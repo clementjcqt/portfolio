@@ -20,46 +20,58 @@
 </head>
 
 <body class="background-gradient d-flex" id="about">
+  <div class="top-controls">
+    <div class="lang-toggle" role="group" aria-label="Language toggle">
+      <button class="lang-btn active" data-lang="en">EN</button>
+      <button class="lang-btn" data-lang="fr">FR</button>
+    </div>
+    <div class="theme-toggle" role="group" aria-label="Theme toggle">
+      <button class="theme-btn" id="theme-toggle" aria-pressed="false">☾ Dark</button>
+    </div>
+  </div>
   <nav class="sidebar flex-column d-flex">
     <ul id="sidebar">
-      <li><a href="#about">About</a></li>
-      <li><a href="#skills">My skills</a></li>
-      <li><a href="#projects">My projects</a></li>
-      <li><a href="#resume">My CV</a></li>
-      <li><a href="#contact">Contact me</a></li>
+      <li><a href="#about" data-i18n="nav.about">About</a></li>
+      <li><a href="#skills" data-i18n="nav.skills">My skills</a></li>
+      <li><a href="#projects" data-i18n="nav.projects">My projects</a></li>
+      <li><a href="#resume" data-i18n="nav.resume">My CV</a></li>
+      <li><a href="#contact" data-i18n="nav.contact">Contact me</a></li>
     </ul>
   </nav>
   <main class="container">
     <section class="intro" id="about">
       <div class="header">
-        <h6>Hi, my name is</h6>
+        <h6 data-i18n="intro.greeting">Hi, my name is</h6>
         <h1 class="mt-1">Clément Jacquet.</h1>
         <h2 id="typewriter"></h2>
       </div>
       <div class="about reveal" id="typewriterparagraph">
-        <p>
+        <p data-i18n="intro.p1">
           Hi, I’m <span>Clément</span> — a junior <span>full-stack developer</span> and a recent graduate from Le Wagon
           Bordeaux. After several
           years working in management, I decided to switch paths and dive into tech, where I could
           combine <span>creativity, problem-solving, and teamwork.</span>
         </p>
-        <p>
+        <p data-i18n="intro.p2">
           What I bring with me is a solid foundation in web development, along with the rigor and
           collaborative mindset I developed in my previous career. I love turning ideas into <span>functional,
             user-friendly</span>
           applications.
         </p>
-        <p>
+        <p data-i18n="intro.p3">
           <span>My goal is simple:</span> to contribute to innovative projects, grow alongside motivated teams, and keep
           building
           products that make a real impact.
         </p>
       </div>
     </section>
+    <div class="about-cta">
+      <a class="btn-custom" href="#contact" data-i18n="cta.about">Any ideas? Contact me</a>
+    </div>
 
     <section class="skills reveal" id="skills">
-      <h2>Skills</h2>
-      <h3>Languages</h3>
+      <h2 data-i18n="skills.title">Skills</h2>
+      <h3 data-i18n="skills.languages">Languages</h3>
       <div class="skill">
         <span>HTML / CSS</span>
         <div class="bar">
@@ -79,7 +91,7 @@
         </div>
       </div>
 
-      <h3>Frameworks</h3>
+      <h3 data-i18n="skills.frameworks">Frameworks</h3>
       <div class="skill">
         <span>Ruby on Rails</span>
         <div class="bar">
@@ -93,7 +105,7 @@
         </div>
       </div>
 
-      <h3>Tools / Platforms</h3>
+      <h3 data-i18n="skills.tools">Tools / Platforms</h3>
       <div class="skill">
         <span>Git / GitHub</span>
         <div class="bar">
@@ -120,7 +132,7 @@
       </div>
     </section>
     <section class="projects" id="projects">
-      <h2 class="pb-3">My projects </h2>
+      <h2 class="pb-3" data-i18n="projects.title">My projects </h2>
       <div class="cards d-flex">
         <div class="project-card">
           <div class="project-inner">
@@ -129,7 +141,7 @@
               <h3>Habits</h3>
             </div>
             <div class="project-back d-flex flex-column align-items-center">
-              <p>
+              <p data-i18n="projects.habitsDescription">
                 Habits is a responsive web application built with Ruby on Rails, designed to help users track and
                 visualize their daily routines over time. It not only lets users log good and bad habits, but also
                 integrates with a large language model (LLM) to provide personalized tips and recommendations,
@@ -137,59 +149,121 @@
                 habit-building more engaging and effective.
               </p>
               <button class="btn-custom"><a href="https://habits-tracker-81fda164a177.herokuapp.com/"
-                  target="blank">Have a look !</a></button>
+                  target="blank" data-i18n="projects.cta">Have a look !</a></button>
               <span class="pt-4">Ruby on Rails - Stimulus - Azure LLM API - Bootstrap</span>
+            </div>
+          </div>
+        </div>
+        <div class="project-card">
+          <div class="project-inner">
+            <div class="project-front d-flex flex-column align-items-center">
+              <video class="dogtherhappy-media" src="./assets/video/dohtherhappy.webm" autoplay muted loop playsinline aria-label="DogTherHappy preview"></video>
+              <h3>DogTherHappy</h3>
+            </div>
+            <div class="project-back d-flex flex-column align-items-center">
+              <p data-i18n="projects.dogtherhappyDescription">
+                DogTherHappy is a playful landing page built in vanilla HTML/CSS/JS, highlighting a cheerful pet wellness
+                service with smooth scroll, animated accents, and a bright, welcoming hero section.
+              </p>
+              <button class="btn-custom"><a href="https://clementjcqt.github.io/dogtherhappy/"
+                  target="blank" data-i18n="projects.cta">Have a look !</a></button>
+              <span class="pt-4">HTML - CSS - JavaScript</span>
             </div>
           </div>
         </div>
       </div>
     </section>
     <section class="resume reveal" id="resume">
-      <h2>My CV</h2>
+      <h2 data-i18n="resume.title">My CV</h2>
       <div class="resume-content">
         <div class="job">
-          <h4>Duty Manager — Ricky’s River Bar and Restaurant</h4>
-          <p><em>Jan 2022 – Nov 2024</em></p>
+          <h4 data-i18n="resume.job1.title">Duty Manager — Ricky’s River Bar and Restaurant</h4>
+          <p><em data-i18n="resume.job1.dates">Jan 2022 – Nov 2024</em></p>
           <ul>
-            <li>Directed a 30-member team in a high-pressure environment.</li>
-            <li>Implemented stock management processes to reduce inefficiencies.</li>
-            <li>Organized private events (up to 200 clients) demonstrating project management skills.</li>
+            <li data-i18n="resume.job1.bullet1">Directed a 30-member team in a high-pressure environment.</li>
+            <li data-i18n="resume.job1.bullet2">Implemented stock management processes to reduce inefficiencies.</li>
+            <li data-i18n="resume.job1.bullet3">Organized private events (up to 200 clients) demonstrating project management skills.</li>
           </ul>
         </div>
 
         <div class="job">
-          <h4>Head Waiter — Ricky’s River Bar and Restaurant</h4>
-          <p><em>Jan 2021 – Aug 2021</em></p>
+          <h4 data-i18n="resume.job2.title">Head Waiter — Ricky’s River Bar and Restaurant</h4>
+          <p><em data-i18n="resume.job2.dates">Jan 2021 – Aug 2021</em></p>
           <ul>
-            <li>Delivered top-tier customer service in fine dining.</li>
-            <li>Ensured precision and attention to detail for service excellence.</li>
-            <li>Anticipated client needs, akin to understanding end-user requirements in development.</li>
+            <li data-i18n="resume.job2.bullet1">Delivered top-tier customer service in fine dining.</li>
+            <li data-i18n="resume.job2.bullet2">Ensured precision and attention to detail for service excellence.</li>
+            <li data-i18n="resume.job2.bullet3">Anticipated client needs, akin to understanding end-user requirements in development.</li>
           </ul>
         </div>
 
         <div class="job">
-          <h4>Assistant Manager — Franprix</h4>
-          <p><em>Feb 2017 – Sep 2018</em></p>
+          <h4 data-i18n="resume.job3.title">Assistant Manager — Franprix</h4>
+          <p><em data-i18n="resume.job3.dates">Feb 2017 – Sep 2018</em></p>
           <ul>
-            <li>Supervised a team of 6 employees and fostered accountability.</li>
-            <li>Optimized stock and inventory processes to reduce waste.</li>
-            <li>Monitored P&L, applying data-driven decision-making.</li>
+            <li data-i18n="resume.job3.bullet1">Supervised a team of 6 employees and fostered accountability.</li>
+            <li data-i18n="resume.job3.bullet2">Optimized stock and inventory processes to reduce waste.</li>
+            <li data-i18n="resume.job3.bullet3">Monitored P&L, applying data-driven decision-making.</li>
           </ul>
         </div>
       </div>
     </section>
     <section class="contact reveal" id="contact">
-      <h2>Contact me !</h2>
-      <h3>If you'd like to get in touch, here are my socials:</h3>
-      <div class="socials">
-        <ul>
-          <li><a href="https://github.com/clementjcqt" target="blank"><i class="fa-brands fa-square-github"></i></a>
-          </li>
-          <li><a href="https://www.linkedin.com/in/-clement-jacquet" target="blank"><i
-                class="fa-brands fa-linkedin"></i></a></li>
-          <li><a href="mailto:clement.jacquet.16@gmail.com?subject=Portfolio%20Contact&body=Hi%20Clément,"
-              target="blank"><i class="fa-regular fa-envelope"></i></a></li>
-        </ul>
+      <h2 data-i18n="contact.title">Contact me !</h2>
+      <div class="contact-wrapper">
+        <div class="contact-panel">
+          <h3 data-i18n="contact.subtitle">Let's build something together</h3>
+          <p data-i18n="contact.text">If you have a project in mind, want to collaborate, or just say hello, drop me a line. I’ll reply as soon
+            as I can.</p>
+          <div class="contact-details">
+            <div class="contact-detail">
+              <i class="fa-regular fa-envelope"></i>
+              <a href="mailto:clement.jacquet.16@gmail.com?subject=Portfolio%20Contact" data-i18n="contact.emailLabel">clement.jacquet.16@gmail.com</a>
+            </div>
+            <div class="contact-detail">
+              <i class="fa-brands fa-linkedin"></i>
+              <a href="https://www.linkedin.com/in/-clement-jacquet" target="blank" data-i18n="contact.linkedin">Connect on LinkedIn</a>
+            </div>
+            <div class="contact-detail">
+              <i class="fa-brands fa-square-github"></i>
+              <a href="https://github.com/clementjcqt" target="blank" data-i18n="contact.github">Explore my GitHub</a>
+            </div>
+          </div>
+          <div class="socials contact-socials">
+            <ul>
+              <li><a href="https://github.com/clementjcqt" target="blank"><i class="fa-brands fa-square-github"></i></a>
+              </li>
+              <li><a href="https://www.linkedin.com/in/-clement-jacquet" target="blank"><i
+                    class="fa-brands fa-linkedin"></i></a></li>
+              <li><a href="mailto:clement.jacquet.16@gmail.com?subject=Portfolio%20Contact&body=Hi%20Clément,"
+                  target="blank"><i class="fa-regular fa-envelope"></i></a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="contact-panel">
+          <form id="contact-form" class="contact-form" action="https://formsubmit.co/clement.jacquet.16@gmail.com" method="POST">
+            <div class="form-grid">
+              <div class="form-field">
+                <label for="name" data-i18n="contact.form.name">Name</label>
+                <input type="text" id="name" name="name" placeholder="Your name" required>
+              </div>
+              <div class="form-field">
+                <label for="email" data-i18n="contact.form.email">Email</label>
+                <input type="email" id="email" name="email" placeholder="you@example.com" required>
+              </div>
+            </div>
+            <div class="form-field">
+              <label for="subject" data-i18n="contact.form.subject">Subject</label>
+              <input type="text" id="subject" name="subject" placeholder="Project idea, collaboration...">
+            </div>
+            <div class="form-field">
+              <label for="message" data-i18n="contact.form.message">Message</label>
+              <textarea id="message" name="message" rows="5" placeholder="Tell me more about your project" required></textarea>
+            </div>
+            <input type="hidden" name="_subject" value="Portfolio contact" id="form-subject-hidden">
+            <input type="text" name="_honey" style="display:none">
+            <button type="submit" class="btn-custom" data-i18n="contact.form.cta">Send message</button>
+          </form>
+        </div>
       </div>
     </section>
   </main>
